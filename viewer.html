@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutoriel Généré - Entreprise</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9fafb; color: #111827; margin: 0; padding: 30px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    input.title-input { font-size: 22px; font-weight: bold; border: 1px solid transparent; padding: 4px 8px; border-radius: 4px; width: 55%; }
+    input.title-input:hover, input.title-input:focus { border-color: #d1d5db; outline: none; }
+    .actions button { padding: 10px 16px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; margin-left: 8px; }
+    .btn-export { background: #2563eb; color: white; }
+    .btn-export:hover { background: #1d4ed8; }
+    .btn-api { background: #10b981; color: white; }
+    .step-card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .step-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .badge { background: #ef4444; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
+    .step-desc { font-size: 16px; font-weight: 600; width: 100%; border: 1px solid #e5e7eb; padding: 6px 10px; border-radius: 6px; }
+    .step-url { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+    img { width: 100%; border-radius: 6px; border: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <input type="text" id="guide-title" class="title-input" value="Procédure interne - Nouveau Tutoriel">
+      <div class="actions">
+        <button class="btn-export" id="btn-download">Exporter en HTML</button>
+        <button class="btn-api" id="btn-send-api">Publier sur notre serveur</button>
+      </div>
+    </div>
+    <div id="steps-container"></div>
+  </div>
+
+  <!-- Appel externe obligatoire en Manifest V3 -->
+  <script src="viewer.js"></script>
+</body>
+</html>
